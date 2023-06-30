@@ -1,0 +1,37 @@
+4.WAP to rotate the string ‘brainmentors in the right direction. This is done by periodically removing one letter from the string end and attaching it to the front.
+
+input  = brainmentors
+
+output = sbrainmentor
+
+function rotate() {
+    var str="Brainmentors";
+    var str1=str;
+    var l=str1.length;
+    for(var i=0;i<l;i++){
+        var c=str1.charAt(l-1);
+        var s=str1.slice(0,l-1);
+        var x=c.concat(s);
+        str1=x;
+        console.log(str1);
+    }
+}
+undefined
+rotat
+VM430:1 Uncaught ReferenceError: rotat is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM430:1
+rotate();
+VM416:10 sBrainmentor
+VM416:10 rsBrainmento
+VM416:10 orsBrainment
+VM416:10 torsBrainmen
+VM416:10 ntorsBrainme
+VM416:10 entorsBrainm
+VM416:10 mentorsBrain
+VM416:10 nmentorsBrai
+VM416:10 inmentorsBra
+VM416:10 ainmentorsBr
+VM416:10 rainmentorsB
+VM416:10 Brainmentors
+undefined
