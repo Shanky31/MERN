@@ -1,0 +1,19 @@
+15. Write a function to find the maximum and minimum elements in an array.
+arr = [10,3,15,-1,9,6]
+
+output = maxno. : 15
+minno. : -1
+
+function MaxMin(a)
+{
+    
+    function compareElement(a,b){
+        return a-b;
+    }
+    a.sort(compareElement);
+    var max=a[a.length-1];
+    var min=a[0];
+    console.log(`Maximum Value in array is ${max} and Minimum value is${min}`)
+}
+MaxMin([1,7,6,453,425,2342,25,53]);
+VM1177:10 Maximum Value in array is 2342 and Minimum value is1

@@ -1,0 +1,30 @@
+2 . Create a function Named Triangle which takes 3 parameters, say A, B and C denoting the 3 sides of a triangle.
+Use Callback function, create a method to check if the triangle is Equilateral or not.
+
+
+Output:
+"true" if the triangle is equilateral and "false" if its not.
+
+
+function checkEquilateral(a,b,c,fn)
+{
+    console.log(fn(a,b,c));
+}
+undefined
+checkEquilateral(1,2,3,equilateral);
+VM1943:3 Not Equilateral
+undefined
+checkEquilateral(2,2,2,equilateral);
+VM1943:3 Not Equilateral
+undefined
+function equilateral(a,b,c)
+    
+{
+    return (a=b=c)?"Equilateral":"Not Equilateral";
+}
+undefined
+checkEquilateral(2,2,2,equilateral);
+VM1943:3 Equilateral
+undefined
+checkEquilateral(parseInt(prompt("Enter the num1")),parseInt(prompt("Enter the num2")),parseInt(prompt("Enter the operation")),equilateral); 
+VM1943:3 Equilateral
