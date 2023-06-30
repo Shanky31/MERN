@@ -1,0 +1,20 @@
+Write a JS Function to validate Phone Number 
+Only number and must be 10 digit long
+
+function checkNumber( x=0){
+    var num=x.toString();
+    if(num.length==10)
+    {
+        for(var i=0;i<num.length;i++){
+            if(!parseInt(num.charAt(i))) return "Wrong";
+        }
+    } else return "Wrong Number";
+    return "Valid Number";
+}
+undefined
+checkNumber("6573846383");
+'Valid Number'
+checkNumber("657384638");
+'Wrong Number'
+checkNumber(7684984829);
+'Valid Number'

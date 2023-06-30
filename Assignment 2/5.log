@@ -1,0 +1,48 @@
+Write a JS Function to find the occurrence of each character in JS
+Input : “brain mentors”
+O/P : b 1
+r 2
+A 1
+I 1
+N 2
+M 1
+E 1
+T 1
+O 1
+S 1
+
+
+function frequency1(str=prompt("Enter the string"))
+{
+    // var str="Brain Mentors";
+    var s="";
+    for(var i=0;i<str.length;i++)
+    { 
+        if(str.charAt(i)==" ") continue;
+        var c=0;
+        for(var j=i;j<str.length;j++)
+        {
+            if(str.charAt(i)==str.charAt(j)) c++;
+        }
+        if(!s.includes(str.charAt(i))) 
+        {
+            console.log(str.charAt(i)+ "   "+ c);
+            s=s+str.charAt(i);
+        }
+    }
+}
+
+
+undefined
+frequency1();
+VM29:15 B   1
+VM29:15 r   2
+VM29:15 a   1
+VM29:15 i   1
+VM29:15 n   2
+VM29:15 M   1
+VM29:15 e   1
+VM29:15 t   1
+VM29:15 o   1
+VM29:15 s   1
+undefined

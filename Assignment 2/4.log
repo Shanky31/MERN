@@ -1,0 +1,19 @@
+Write a JS Function to validate Email Address
+Must contains @
+Must ends with .com/.org/.edu
+
+function isValidEmail(email){
+    // var email="shashank1@gmail.com";
+    if(!email.includes('@')) return "Not valid";
+    var x=email.lastIndexOf(".");
+    if(email.substring(x,email.length)==='.com'||email.substring(x,email.length)==='.org'||email.substring(x,email.length)==='.edu') return "Valid Email";
+    return "Not a Valid Email";
+}
+
+undefined
+isValidEmail("shashank1@gmail.com");
+'Valid Email'
+isValidEmail("shashank1@gmail");
+'Not a Valid Email'
+isValidEmail("shashank1@gmail.org");
+'Valid Email'
