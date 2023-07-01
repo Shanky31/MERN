@@ -1,0 +1,16 @@
+3. Write a function that takes a string as input and returns the number of vowels (a, e, i, o, u) in the string.
+Count of vowels in string;
+ex:- str = "brainmentors"
+		output: count = 4
+
+function vowel(str){
+var a=str.split("");
+    var count=0;
+    var c=a.filter(e=>e=='a'||e=='e'||e=='i'||e=='o'||e=='u'?count++:0);
+    return count;
+}
+undefined
+vowel("brain");
+2
+vowel("brainmentors");
+4

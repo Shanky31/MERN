@@ -1,0 +1,17 @@
+
+7. Write a function to find the second largest number in an array.
+
+ex:- var arr = [12,4,6,9,2,15,3,9];
+		
+		output second largest : 12function secLarge(){
+    var arr = [12,4,6,9,2,15,3,9];
+     arr.sort((a,b)=>b-a);
+    // var set=new Set(arr);
+    return arr[1];
+    
+    
+}
+    
+undefined
+secLarge();
+12
