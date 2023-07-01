@@ -1,0 +1,15 @@
+1. Find Occurance of a target value in given array;
+arr= [19, 22, 18, 19, 16, 18, 19, 21, 24];
+target = 19;
+
+function find(){
+    arr= [19, 22, 18, 19, 16, 18, 19, 21, 24];
+    var a=19;
+    var c=0;
+    arr.filter(e=>e==a?c++:0);
+    return c;
+}
+
+undefined
+find();
+3
